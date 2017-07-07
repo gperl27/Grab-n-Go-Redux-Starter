@@ -13,14 +13,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
-      {
-        test: /\.css$/,
-        loaders: ['style-loader', 'css-lodaer', 'autoprefixer-loader?browsers=last 2 versions'],
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'autoprefixer-loader?browsers=last 2 versions', 'sass-loader'],
-      }],
+    ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
