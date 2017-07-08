@@ -30,7 +30,7 @@
     "expect": "^1.20.2",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
-    "react-scripts-test": "^0.6.0",
+    "react-scripts": "^1.0.10",
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1"
   },
