@@ -1,5 +1,5 @@
 # Grab n' Go Redux Starter
-___
+
 ## About
 In looking for React/Redux boilerplates, I found myself wasting more time rather than being productive. So, I decided to make a config-light, development-ready boilerplate.
 
@@ -40,9 +40,9 @@ $ npm run build
 
 ## Conventions
 
-### Separation of Dump & Smart Components
+### Separation of Dumb & Smart Components
 
-All dump components essentially should not know what your application pertains to. They should only accept props and possibly keep some sort of uncontrolled state.
+All dumb components essentially should not know what your application pertains to. They should only accept props and possibly keep some sort of uncontrolled state.
 
 Containers, on the other hand, can manipulate or hold state. Additionally, containers can have child components that are also either containers OR are very app-specific components.
 
