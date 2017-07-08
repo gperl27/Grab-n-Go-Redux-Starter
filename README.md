@@ -32,7 +32,7 @@ $ npm run build
 | React-Router (v4) | Dynamic routing |
 | Redux Form | Heavy lifting for form functionalities |
 | Redux Thunk | Allow multiple action dispatchings |
-| Enzyme/Expect | Testing |
+| Enzyme/Chai | Testing |
 | Axios | HTTP |
 | Webpack Dev Server | Compile & testing scripts |
 | Radium | Component Styling |

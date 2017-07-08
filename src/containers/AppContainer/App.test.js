@@ -1,9 +1,12 @@
-import expect from 'expect';
+import React from 'react';
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
 
-describe('Component: App', () => {
+import App from './App';
 
-  it('does all the things', () => {
-    expect(true).toEqual(true);
+describe('<App />', () => {
+  it('Renders a div', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find('div')).to.have.length(1);
   });
-
 });
