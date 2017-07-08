@@ -1,6 +1,12 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
+  externals: {
+    cheerio: 'window',
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+  },
   entry: [
     './src/index.js',
   ],

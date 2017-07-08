@@ -4,8 +4,10 @@
   "description": "Grab 'n Go Redux Boilerplate",
   "main": "index.js",
   "scripts": {
-    "watch": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "npm run test"
+    "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
+    "test": "react-scripts test --env=jsdom",
+    "tdd": "npm test -- --watch",
+    "build": "webpack -p"
   },
   "keywords": [
     "react",
@@ -26,19 +28,22 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "expect": "^1.20.2",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1",
+    "react-scripts": "^1.0.10",
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "lodash": "^4.17.4",
     "radium": "^0.19.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
-    "redux": "^3.7.1"
+    "redux": "^3.7.1",
+    "redux-thunk": "^2.2.0"
   }
 }
