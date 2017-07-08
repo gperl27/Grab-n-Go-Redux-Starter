@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
     "test": "react-scripts test --env=jsdom",
-    "tdd": "npm test -- --watch",
     "build": "webpack -p"
   },
   "keywords": [
