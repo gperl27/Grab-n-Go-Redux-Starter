@@ -1,4 +1,4 @@
-import books from './actions';
+import books from './api';
 
 export const GET_BOOKS = 'addBooks';
 

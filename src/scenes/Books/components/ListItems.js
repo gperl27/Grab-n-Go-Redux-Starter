@@ -6,7 +6,7 @@ const renderItems = items => (
 
 const ListItems = props => (
   <ul>
-    {renderItems(props)}
+    {renderItems(props.books)}
   </ul>
 );
 

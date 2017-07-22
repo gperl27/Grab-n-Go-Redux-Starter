@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Books from './scenes/Books';
+
 const App = () => (
   <div>
-    App
+    <Books />
   </div>
 );
 
