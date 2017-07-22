@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import store from './store';
 
-import App from './containers/AppContainer/App';
+import App from './App';
 
 ReactDOM.render(
   <Provider store={store}>
