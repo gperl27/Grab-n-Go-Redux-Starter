@@ -1,15 +1,15 @@
 import {
-  {{name}},
+  {{ upperCase name}},
 } from './actions';
 
 const initialState = {
-  {{name}}: [],
+  {{ camelCase name }}: [],
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case {{name}}:
-      return { ...state, {{name}}: action.payload };
+    case {{ upperCase name }}:
+      return { ...state, {{ camelCase name}}: action.payload };
     default:
       return state;
   }

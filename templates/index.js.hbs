@@ -3,20 +3,20 @@ import { connect } from 'react-redux';
 import { {{name}}Selector } from './selectors';
 import * as actions from './actions';
 
-class {{name}} extends Component {
+class {{ properCase name}} extends Component {
   render() {
-    const { {{name}} } = this.props;
+    const { {{ camelCase name}} } = this.props;
 
     return (
       <div>
-        {{name}} container
+        {{ properCase name}} container
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
-  {{name}}: {{name}}Selector(state),
+  {{ camelCase name}}: {{ camelCase name}}Selector(state),
 });
 
-export default connect(mapStateToProps, actions)({{name}});
+export default connect(mapStateToProps, actions)({{ properCase name }});

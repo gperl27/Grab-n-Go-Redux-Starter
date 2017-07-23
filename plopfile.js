@@ -10,29 +10,29 @@ module.exports = function (plop) {
      actions: [
        {
          type: 'add',
-         path: 'src/scenes/{{name}}/action.js',
+         path: 'src/scenes/{{properCase name}}/action.js',
          templateFile: 'templates/action.js.hbs',
        }, {
          type: 'add',
-         path: 'src/scenes/{{name}}/reducers.js',
+         path: 'src/scenes/{{ properCase name }}/reducers.js',
          templateFile: 'templates/reducers.js.hbs'
        },
        {
          type: 'add',
-         path: 'src/scenes/{{name}}/selectors.js',
+         path: 'src/scenes/{{ properCase name }}/selectors.js',
          templateFile: 'templates/selectors.js.hbs',
        }, {
          type: 'add',
-         path: 'src/scenes/{{name}}/components/dumbcomponent.js',
+         path: 'src/scenes/{{ properCase name }}/components/dumbcomponent.js',
          templateFile: 'templates/component.js.hbs',
        },
        {
          type: 'add',
-         path: 'src/scenes/{{name}}/api.js',
+         path: 'src/scenes/{{ properCase name }}/api.js',
          templateFile: 'templates/api.js.hbs',
        }, {
          type: 'add',
-         path: 'src/scenes/{{name}}/index.js',
+         path: 'src/scenes/{{ properCase name }}/index.js',
          templateFile: 'templates/index.js.hbs',
        },
      ],
