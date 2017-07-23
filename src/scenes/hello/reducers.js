@@ -1,15 +1,15 @@
 import {
-  {{name}},
+  hello,
 } from './actions';
 
 const initialState = {
-  {{name}}: [],
+  hello: [],
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case {{name}}:
-      return { ...state, {{name}}: action.payload };
+    case hello:
+      return { ...state, hello: action.payload };
     default:
       return state;
   }
